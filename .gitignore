@@ -4,3 +4,9 @@ practices/prac1/video
 practices/prac2/mdp.py
 practices/prac5/_vizdoom.ini
 practices/prac5/wandb
+practices/prac7/1_spo
+practices/prac7/2_ppo
+practices/prac7/3_ppo-non-shared
+practices/prac7/4_ppo-gae
+practices/prac7/wandb
+practices/prac7/_vizdoom.ini
