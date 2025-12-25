@@ -1,0 +1,115 @@
+(venv-3.10.12) mitchell@mitchell-pc:~/dev/hse/RL/homeworks/hw2/ml-agents-develop/Project$ mlagents-learn config/AmyImitation.yaml --run-id=DogTrainingTest2
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+        
+ Version information:
+  ml-agents: 1.1.0,
+  ml-agents-envs: 1.1.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.1.1+cu121
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 3.0.0-exp.1 and communication version 1.5.0
+[INFO] Connected new brain: AmyImitation?team=0
+[INFO] Hyperparameters for behavior name AmyImitation: 
+        trainer_type:   ppo
+        hyperparameters:
+          batch_size:   128
+          buffer_size:  2048
+          learning_rate:        0.0003
+          beta: 0.0005
+          epsilon:      0.2
+          lambd:        0.95
+          num_epoch:    3
+          shared_critic:        False
+          learning_rate_schedule:       constant
+          beta_schedule:        constant
+          epsilon_schedule:     constant
+        checkpoint_interval:    50000
+        network_settings:
+          normalize:    True
+          hidden_units: 128
+          num_layers:   2
+          vis_encode_type:      simple
+          memory:       None
+          goal_conditioning_type:       hyper
+          deterministic:        False
+        reward_signals:
+          extrinsic:
+            gamma:      0.99
+            strength:   1.0
+            network_settings:
+              normalize:        False
+              hidden_units:     128
+              num_layers:       2
+              vis_encode_type:  simple
+              memory:   None
+              goal_conditioning_type:   hyper
+              deterministic:    False
+        init_path:      None
+        keep_checkpoints:       100
+        even_checkpoints:       False
+        max_steps:      1000000
+        time_horizon:   64
+        summary_freq:   15000
+        threaded:       True
+        self_play:      None
+        behavioral_cloning:     None
+[INFO] AmyImitation. Step: 15000. Time Elapsed: 170.431 s. Mean Reward: -0.763. Std of Reward: 1.634. Training.
+[INFO] AmyImitation. Step: 30000. Time Elapsed: 334.283 s. Mean Reward: -0.707. Std of Reward: 1.632. Training.
+[INFO] AmyImitation. Step: 45000. Time Elapsed: 499.485 s. Mean Reward: -0.758. Std of Reward: 1.470. Training.
+[INFO] Exported results/DogTrainingTest2/AmyImitation/AmyImitation-49968.onnx
+[INFO] AmyImitation. Step: 60000. Time Elapsed: 666.903 s. Mean Reward: -0.670. Std of Reward: 1.698. Training.
+[INFO] AmyImitation. Step: 75000. Time Elapsed: 830.374 s. Mean Reward: -0.928. Std of Reward: 1.491. Training.
+[INFO] AmyImitation. Step: 90000. Time Elapsed: 995.620 s. Mean Reward: -0.886. Std of Reward: 1.880. Training.
+[INFO] Exported results/DogTrainingTest2/AmyImitation/AmyImitation-99936.onnx
+[INFO] AmyImitation. Step: 105000. Time Elapsed: 1160.841 s. Mean Reward: -0.955. Std of Reward: 1.252. Training.
+[INFO] AmyImitation. Step: 120000. Time Elapsed: 1320.677 s. Mean Reward: -0.694. Std of Reward: 1.919. Training.
+[INFO] AmyImitation. Step: 135000. Time Elapsed: 1477.163 s. Mean Reward: -0.676. Std of Reward: 2.046. Training.
+[INFO] AmyImitation. Step: 150000. Time Elapsed: 1578.219 s. Mean Reward: -0.196. Std of Reward: 2.943. Training.
+[INFO] Exported results/DogTrainingTest2/AmyImitation/AmyImitation-149963.onnx
+[INFO] AmyImitation. Step: 165000. Time Elapsed: 1671.042 s. Mean Reward: -0.641. Std of Reward: 1.433. Training.
+[INFO] AmyImitation. Step: 180000. Time Elapsed: 1765.560 s. Mean Reward: -0.106. Std of Reward: 1.955. Training.
+[INFO] AmyImitation. Step: 195000. Time Elapsed: 1857.226 s. Mean Reward: 0.440. Std of Reward: 2.801. Training.
+[INFO] Exported results/DogTrainingTest2/AmyImitation/AmyImitation-199959.onnx
+[INFO] AmyImitation. Step: 210000. Time Elapsed: 1946.849 s. Mean Reward: 0.653. Std of Reward: 3.333. Training.
+[INFO] AmyImitation. Step: 225000. Time Elapsed: 2038.434 s. Mean Reward: 0.254. Std of Reward: 2.452. Training.
+[INFO] AmyImitation. Step: 240000. Time Elapsed: 2129.496 s. Mean Reward: 2.035. Std of Reward: 4.810. Training.
+[INFO] Exported results/DogTrainingTest2/AmyImitation/AmyImitation-249982.onnx
+[INFO] AmyImitation. Step: 255000. Time Elapsed: 2219.936 s. Mean Reward: 1.937. Std of Reward: 3.713. Training.
+[INFO] AmyImitation. Step: 270000. Time Elapsed: 2310.592 s. Mean Reward: 3.538. Std of Reward: 5.987. Training.
+[INFO] AmyImitation. Step: 285000. Time Elapsed: 2403.065 s. Mean Reward: 0.972. Std of Reward: 2.183. Training.
+[INFO] AmyImitation. Step: 300000. Time Elapsed: 2556.706 s. Mean Reward: 3.932. Std of Reward: 5.813. Training.
+[INFO] Exported results/DogTrainingTest2/AmyImitation/AmyImitation-299975.onnx
+[INFO] AmyImitation. Step: 315000. Time Elapsed: 2646.960 s. Mean Reward: 2.596. Std of Reward: 5.371. Training.
+[INFO] AmyImitation. Step: 330000. Time Elapsed: 2738.993 s. Mean Reward: 2.894. Std of Reward: 6.102. Training.
+[INFO] AmyImitation. Step: 345000. Time Elapsed: 2829.403 s. Mean Reward: 6.082. Std of Reward: 6.621. Training.
+[INFO] Exported results/DogTrainingTest2/AmyImitation/AmyImitation-349981.onnx
+[INFO] AmyImitation. Step: 360000. Time Elapsed: 2922.500 s. Mean Reward: 7.073. Std of Reward: 6.952. Training.
+[INFO] AmyImitation. Step: 375000. Time Elapsed: 3012.948 s. Mean Reward: 10.119. Std of Reward: 7.659. Training.
+[INFO] AmyImitation. Step: 390000. Time Elapsed: 3105.055 s. Mean Reward: 6.001. Std of Reward: 7.409. Training.
+[INFO] Exported results/DogTrainingTest2/AmyImitation/AmyImitation-399968.onnx
+[INFO] AmyImitation. Step: 405000. Time Elapsed: 3196.483 s. Mean Reward: 5.392. Std of Reward: 6.022. Training.
+[INFO] AmyImitation. Step: 420000. Time Elapsed: 3287.630 s. Mean Reward: 7.448. Std of Reward: 7.671. Training.
+[INFO] AmyImitation. Step: 435000. Time Elapsed: 3379.895 s. Mean Reward: 9.093. Std of Reward: 6.721. Training.
+[INFO] AmyImitation. Step: 450000. Time Elapsed: 3470.697 s. Mean Reward: 12.184. Std of Reward: 6.649. Training.
+[INFO] Exported results/DogTrainingTest2/AmyImitation/AmyImitation-449967.onnx
+[INFO] AmyImitation. Step: 465000. Time Elapsed: 3560.914 s. Mean Reward: 8.701. Std of Reward: 6.633. Training.
+[INFO] AmyImitation. Step: 480000. Time Elapsed: 4163.293 s. Mean Reward: 7.918. Std of Reward: 7.630. Training.
+[WARNING] Restarting worker[0] after 'Communicator has exited.'
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+^C[INFO] Learning was interrupted. Please wait while the graph is generated.
+[INFO] Exported results/DogTrainingTest2/AmyImitation/AmyImitation-492520.onnx
+[INFO] Copied results/DogTrainingTest2/AmyImitation/AmyImitation-492520.onnx to results/DogTrainingTest2/AmyImitation.onnx.

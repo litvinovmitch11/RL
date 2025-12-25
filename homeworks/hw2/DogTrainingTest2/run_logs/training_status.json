@@ -1,0 +1,110 @@
+{
+    "AmyImitation": {
+        "checkpoints": [
+            {
+                "steps": 49968,
+                "file_path": "results/DogTrainingTest2/AmyImitation/AmyImitation-49968.onnx",
+                "reward": 4.988927848637104,
+                "creation_time": 1766610379.140217,
+                "auxillary_file_paths": [
+                    "results/DogTrainingTest2/AmyImitation/AmyImitation-49968.pt"
+                ]
+            },
+            {
+                "steps": 99936,
+                "file_path": "results/DogTrainingTest2/AmyImitation/AmyImitation-99936.onnx",
+                "reward": -2.4001189917325974,
+                "creation_time": 1766610926.0758631,
+                "auxillary_file_paths": [
+                    "results/DogTrainingTest2/AmyImitation/AmyImitation-99936.pt"
+                ]
+            },
+            {
+                "steps": 149963,
+                "file_path": "results/DogTrainingTest2/AmyImitation/AmyImitation-149963.onnx",
+                "reward": -0.7381900399923325,
+                "creation_time": 1766611400.0414166,
+                "auxillary_file_paths": [
+                    "results/DogTrainingTest2/AmyImitation/AmyImitation-149963.pt"
+                ]
+            },
+            {
+                "steps": 199959,
+                "file_path": "results/DogTrainingTest2/AmyImitation/AmyImitation-199959.onnx",
+                "reward": -1.0607973411679268,
+                "creation_time": 1766611709.719237,
+                "auxillary_file_paths": [
+                    "results/DogTrainingTest2/AmyImitation/AmyImitation-199959.pt"
+                ]
+            },
+            {
+                "steps": 249982,
+                "file_path": "results/DogTrainingTest2/AmyImitation/AmyImitation-249982.onnx",
+                "reward": null,
+                "creation_time": 1766612012.300411,
+                "auxillary_file_paths": [
+                    "results/DogTrainingTest2/AmyImitation/AmyImitation-249982.pt"
+                ]
+            },
+            {
+                "steps": 299975,
+                "file_path": "results/DogTrainingTest2/AmyImitation/AmyImitation-299975.onnx",
+                "reward": 0.7202581837773323,
+                "creation_time": 1766612378.5326178,
+                "auxillary_file_paths": [
+                    "results/DogTrainingTest2/AmyImitation/AmyImitation-299975.pt"
+                ]
+            },
+            {
+                "steps": 349981,
+                "file_path": "results/DogTrainingTest2/AmyImitation/AmyImitation-349981.onnx",
+                "reward": null,
+                "creation_time": 1766612681.8588018,
+                "auxillary_file_paths": [
+                    "results/DogTrainingTest2/AmyImitation/AmyImitation-349981.pt"
+                ]
+            },
+            {
+                "steps": 399968,
+                "file_path": "results/DogTrainingTest2/AmyImitation/AmyImitation-399968.onnx",
+                "reward": null,
+                "creation_time": 1766612988.1793993,
+                "auxillary_file_paths": [
+                    "results/DogTrainingTest2/AmyImitation/AmyImitation-399968.pt"
+                ]
+            },
+            {
+                "steps": 449967,
+                "file_path": "results/DogTrainingTest2/AmyImitation/AmyImitation-449967.onnx",
+                "reward": null,
+                "creation_time": 1766613292.5271714,
+                "auxillary_file_paths": [
+                    "results/DogTrainingTest2/AmyImitation/AmyImitation-449967.pt"
+                ]
+            },
+            {
+                "steps": 492520,
+                "file_path": "results/DogTrainingTest2/AmyImitation/AmyImitation-492520.onnx",
+                "reward": 9.975289029379686,
+                "creation_time": 1766614075.9859812,
+                "auxillary_file_paths": [
+                    "results/DogTrainingTest2/AmyImitation/AmyImitation-492520.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 492520,
+            "file_path": "results/DogTrainingTest2/AmyImitation.onnx",
+            "reward": 9.975289029379686,
+            "creation_time": 1766614075.9859812,
+            "auxillary_file_paths": [
+                "results/DogTrainingTest2/AmyImitation/AmyImitation-492520.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.1.1+cu121"
+    }
+}
